@@ -15,14 +15,9 @@ var a, b float64
 
 // cliCmd represents the cli command
 var cliCmd = &cobra.Command{
-	Use:   "cli",
-	Short: "A brief description of your command",
-	Long: `A longer description that spans multiple lines and likely contains examples
-and usage of using your command. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	Use:   "Sum A + B",
+	Short: "Print A + B",
+	Long: `Print a sum of A + B`,
 	Run: func(cmd *cobra.Command, args []string) {
 		calc := app.NewCalc()
 		
